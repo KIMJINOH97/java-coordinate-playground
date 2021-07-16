@@ -42,4 +42,9 @@ class LocationTest {
         assertThat(location2.length(location1)).isEqualTo(3.162, offset(0.00099));
     }
 
+    @Test
+    void 기울기_구하기(){
+        assertThat(location1.slope(location2)).isEqualTo(3.000, offset(0.00099));
+    }
+
 }
