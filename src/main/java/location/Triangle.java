@@ -37,10 +37,7 @@ public class Triangle implements Calculator{
     public double calculate() {
         LineUtils lineUtils = new LineUtils(locations);
         List<Double> allLine = lineUtils.getAllLine();
-        double sumOfLine = 0;
-        for (Double lineLength : allLine) {
-            sumOfLine += lineLength;
-        }
+        double sumOfLine = allLine.stream().mapToDouble(Double::new).sum();
 
         sumOfLine /= 2;
 
@@ -50,6 +47,6 @@ public class Triangle implements Calculator{
             multipleOfEachLineDiffer *= (sumOfLine - lineLength);
         }
 
-        return Math.sqrt(sumOfLine*multipleOfEachLineDiffer);
+        return Math.sqrt(sumOfLine * multipleOfEachLineDiffer);
     }
 }

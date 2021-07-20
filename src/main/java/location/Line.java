@@ -14,7 +14,7 @@ public class Line {
 
     public Line(List<Location> location) {
         this.location1 = location.get(0);
-        this.location2 = location.get(0);
+        this.location2 = location.get(1);
     }
 
     public double length() {

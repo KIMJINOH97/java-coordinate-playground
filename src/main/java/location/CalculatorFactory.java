@@ -5,7 +5,7 @@ import java.util.List;
 public class CalculatorFactory {
     public static Calculator create(List<Location> locations) {
         if(locations.size() == 3){
-            return new RectangleCalculator(locations);
+            return new Triangle(locations);
         }
 
         if (locations.size() == 4){
