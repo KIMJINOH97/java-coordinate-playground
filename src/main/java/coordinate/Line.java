@@ -1,9 +1,9 @@
 package coordinate;
 
 import java.util.List;
+import static coordinate.FigureFactory.LINE_POINT_SIZE;
 
 public class Line extends AbstractFigure {
-    public static final int LINE_POINT_SIZE = 2;
 
     public Line(List<Point> points) {
         super(points);
