@@ -1,4 +1,6 @@
- public interface Figure {
+package model;
+
+public interface Figure {
 
     String name();
 
