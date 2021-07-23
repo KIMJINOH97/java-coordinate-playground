@@ -1,3 +1,5 @@
+import model.Line;
+import model.Point;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
